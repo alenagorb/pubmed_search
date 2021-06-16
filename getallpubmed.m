@@ -1,5 +1,12 @@
 function summary_table = getallpubmed(apikey,searchterm)
 
+% The function getallpubmed takes in two compulsory inputs:
+% an individiual API key (obtained from NCBI website) and
+% terms to be searched in Pubmed, and it ouputs
+% the table containing the Pubmed IDs, publication years,
+% titles, authors, journals, and DOIs of the publications
+% matching the search terms
+
 % Error checking for required number of inputs
 if nargin < 2
     error('Not enough input arguments.');
